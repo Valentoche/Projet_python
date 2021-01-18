@@ -360,7 +360,7 @@ class LabyrintheGraphique(object):
                 jc = get_joueur_courant(self.les_joueurs)
                 ordre = ""
                 try:
-                    with iatimeout(1):
+                    #with iatimeout(1):
                         if self.mode_concours:
                             ordre = bot.calculer_action(labyrinthe_2_dico(self.labyrinthe))
                         else:
